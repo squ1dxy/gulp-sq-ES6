@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @@include("chunk/header.html")
+    <h1>main</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam iste incidunt animi ad maiores, velit iusto eaque! Minus aut magnam quibusdam consequuntur corporis, aliquid ex ad ea earum ratione cupiditate fugit. Eius totam amet, laudantium voluptas ad nisi quisquam fuga doloremque labore perspiciatis quam accusamus itaque corrupti! Esse, fugiat quod.</p>
+
+    @@loop("chunk/news-item.html","../../data/news.json")
+
+    @@include("chunk/footer.html")
+
+</body>
+</html>
